@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*,*::before,*::after {
+padding: 0;
+margin: 0;
+border: 0;
+box-sizing: border-box;
+}
+html,body {
+height: 100%;
+}
+body {
+	color: hsl(217, 12%, 63%);
+	font-family: 'Overpass', sans-serif;
+	background-color: hsl(216, 12%, 8%);
+	display: flex;
+	flex-direction: column;
+}
+ul,ol,li {
+list-style: none;
+}
+button {
+font-family: inherit;
+cursor: pointer;
+color: inherit;
+}
+img {
+vertical-align: top;
+}
+
+[class *= 'title'] {
+	font-size: 24px;
+	margin-bottom: 15px;
+	color: hsl(0, 0%, 100%);
+}
+[class *= 'text'] {
+	font-size: 15px;
+	line-height: 166%;
+}
+
+.flipper {
+	margin: auto;
+	perspective: 1000px;
+}
+.flipper.sent .card {
+	transform: rotateY(180deg);
+}
+.card {
+	position: relative;
+	width: 380px;
+	height: 380px;
+	background-color: hsl(213, 19%, 18%);
+	border-radius: 20px;
+	transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.card-front, .card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+}
+.card-front {
+	z-index: 2;
+}
+.card-back {
+	transform: rotateY(180deg);
+}
+
+/* ____________________________________________ */
+.feedback {
+	padding: 25px 20px;
+}
+.feedback__icon {
+	margin-bottom: 25px;
+	width: 45px;
+	height: 45px;
+	background-color: hsl(217, 12%, 22%);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.feedback__title {}
+.feedback__text {
+	margin-bottom: 25px;
+}
+.feedback__rating {
+	display: flex;
+	justify-content: space-between; 
+	margin-bottom: 25px;
+}
+.feedback__rating > * {
+	width: 45px;
+	height: 45px;
+	background-color: hsl(217, 12%, 22%);
+	border-radius: 50%;
+	font-weight: 700;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.feedback__rating > *:hover {
+	background-color: hsl(25, 97%, 53%);
+	color: hsl(0, 0%, 100%);
+}
+.feedback__num {}
+.feedback__num.active {
+	background-color: hsl(216, 12%, 54%);
+	color: hsl(0, 0%, 100%);
+}
+.feedback__button {
+	width: 100%;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: hsl(25, 97%, 53%);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: hsl(0, 0%, 100%);;
+}
+.feedback__button:hover {
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(25, 97%, 53%);
+}
+
+/* ________________________________________ */
+.gratitude {
+	/* display: none; */
+	text-align: center;
+	padding: 30px 20px;
+}
+.gratitude__icon {
+	margin-bottom: 20px;
+}
+.gratitude__result {
+	color: hsl(25, 97%, 53%);
+	background-color: hsl(217, 12%, 22%);
+	border-radius: 20px;
+	width: 55%;
+	padding: 5px 10px;
+	text-align: center;
+	margin: 0 auto 30px auto;
+}
+.gratitude__title {}
+.gratitude__text {}
+
+
+@media (max-width: 425px) { 
+	.block {
+		width: 280px;
+	}
+	.feedback__rating > * {
+		width: 35px;
+		height: 35px;
+	}
+	.gratitude__result {
+		width: 80%;
+	}
+}
+
+
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 100%, 87%);
+}
