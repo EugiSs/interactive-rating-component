@@ -11,9 +11,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/preview1.png);
-![](./screenshots/preview2.png);
-
+![](./screenshots/preview1.png)
+![](./screenshots/preview2.png)
 
 ### Links
 
