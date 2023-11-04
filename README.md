@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Click](https://evgiss.github.io/interactive-rating-component/)
+- Live Site URL: [Click](https://eugiss.github.io/interactive-rating-component/)
 
 ## My process
 
